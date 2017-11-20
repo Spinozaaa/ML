@@ -2,7 +2,7 @@
 #coding=utf-8
 from numpy import *
 import operator
-
+#测试样本	6.3,3.3,6.0,2.5,Iris-virginica
 def filere():
 	filename = 'UCI-Iris.txt' # txt文件和当前脚本在同一目录下，所以不用写具体路径
 
@@ -29,8 +29,7 @@ def filere():
 			labels.append(tlabels)
 			pass
 		group = array(trains) # 将数据从list类型转换为array类型。
-		tests = [0,0,0,0]
-		print(group,tests)
+		tests = [6.3,3.3,6.0,2.5]
 		return  group,labels,tests
 
 '''
